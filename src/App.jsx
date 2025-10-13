@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Product from './components/Product';
 
 function App() {
   //Crear lista de productos
@@ -17,7 +18,13 @@ function App() {
       <Header
         title='Tienda Virtual'
       />
-      
+      <h3>Lista de Productos</h3>
+      {products.map(product => (
+          <Product
+            key={product.id}
+            product={product}
+          />
+      ))}
       <Footer
         year={currentYear}
       />
