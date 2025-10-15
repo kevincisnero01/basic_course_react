@@ -2,7 +2,9 @@ import React from "react";
 
 function Header(props){
   return(
-    <h2>{props.title}</h2>
+    <header className="container">
+      <h1>{props.title}</h1>
+    </header>
     )
 }
 

@@ -18,15 +18,19 @@ const Product = ({product, cart, addProduct, products}) => {
 
   return(
     <div>
-      <p>Proucto: {name}</p> 
-      <p>Precio: {price}$</p> 
-      <button
-        type="button" 
-        style={{ padding: '2px 4px', border: '1px solid gray' }} 
-        onClick={ () => selectProduct(id) }
-      >
-        Comprar
-      </button>
+      <ul>
+        <li>Proucto: {name}</li>
+        <li>Precio: {price}</li>
+        <li style={{ listStyleType: 'none' }}> 
+          <button
+            type="button" 
+            onClick={ () => selectProduct(id) }
+          >
+            Comprar
+          </button>
+        </li>
+      </ul>
+
     </div>
     )
 }

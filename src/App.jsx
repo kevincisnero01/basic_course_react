@@ -22,20 +22,26 @@ function App() {
       <Header
         title='Tienda Virtual'
       />
-      <h4>Lista de Productos</h4>
-      {products.map(product => (
-          <Product
-            key={product.id}
-            product={product}
-            products={products}
-            cart={cart}
-            addProduct={addProduct}
-          />
-      ))}
-      
-      <Cart
-        cart={cart}
-      />
+      <div id="main-container">
+
+        <div id="main-products" className="container">
+          <h3>Lista de Productos</h3>
+          {products.map(product => (
+              <Product
+                key={product.id}
+                product={product}
+                products={products}
+                cart={cart}
+                addProduct={addProduct}
+              />
+          ))}
+        </div>
+        
+        <Cart
+          cart={cart}
+        />
+
+      </div>
       
       <Footer
         year={currentYear}

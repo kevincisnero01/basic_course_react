@@ -4,8 +4,8 @@ import Product from './Product';
 
 const Cart = ({cart}) => {
   return(
-    <div className="cart">
-      <h4>Tu Carrito de Compras</h4>
+    <div id="main-cart" className="container">
+      <h3>Tu Carrito de Compras</h3>
       {cart.length === 0 
       ? <p>No hay productos</p>
       :
