@@ -39,6 +39,7 @@ function App() {
         
         <Cart
           cart={cart}
+          addProduct={addProduct}
         />
 
       </div>
