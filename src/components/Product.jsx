@@ -1,13 +1,19 @@
 import React from "react";
 
-function Product({product}){
+const Product = ({product, cart, addProduct, products}) => {
   
   //destructurar propiedades
   const {id, name, price} = product;
-
+  
   //Agregar producto al carrito
-  const  selectProducts  = (id) =>{
-    console.log('Producto:'+id);
+  const  selectProduct  = (id) =>{
+    
+    const product = products.filter(product => product.id === id)[0];
+    
+    addProduct([
+      ...cart,
+      product
+      ]);
   }
 
   return(
@@ -17,7 +23,7 @@ function Product({product}){
       <button
         type="button" 
         style={{ padding: '2px 4px', border: '1px solid gray' }} 
-        onClick={ () => selectProducts(id) }
+        onClick={ () => selectProduct(id) }
       >
         Comprar
       </button>
