@@ -7,7 +7,7 @@
 
 ![Capture de Pantalla](src/assets/screenshot.png)
 
-Este proyecto es una implementación inicial de un concepto básico de **e-commerce** diseñado para practicar y consolidar los **fundamentos esenciales de React**.
+Este proyecto es una implementación inicial de un concepto básico de **tienda de productos** diseñado para practicar y consolidar los **fundamentos esenciales de React**.
 
 Se centra en la gestión básica de un inventario y un carrito de compras. El objetivo principal fue realizar los **primeros pasos** en el desarrollo con React, enfocándose en la manipulación de estados y la renderización de componentes a través de una interfaz **minimalista** y funcional.
 
@@ -30,8 +30,7 @@ Las siguientes tecnologías y herramientas fueron fundamentales para el desarrol
 
   * **React:** La biblioteca principal de JavaScript para construir la interfaz de usuario.
   * **JavaScript (ES6+):** Utilizado para la lógica del componente y la gestión del estado.
-  * **HTML5 & CSS3:** Empleados para la estructura y el estilo minimalista de la aplicación.
-  * **NPM / Yarn:** Gestor de paquetes utilizado para manejar las dependencias del proyecto.
+  * **HTML5:** Empleados para la estructura minimalista de la aplicación.
 
 -----
 
@@ -102,3 +101,14 @@ basic_course_react/
 ├── package-lock.json
 └── README.md
 ```
+
+## 🚀 Hoja de Ruta (Roadmap)
+
+Este proyecto está en evolución. Las siguientes funcionalidades están planeadas para futuras versiones:
+
+- [x] Listado inicial de productos. (Completado)
+- [ ] Agregar estilos generales con TailwindCSS.
+- [ ] Incorporar gestor de imagenes.
+- [ ] Añadir persistencia del carrito usando `localStorage`.
+- [ ] Implementar un buscador de productos por nombre.
+- [ ] Refactorizar componentes a TypeScript.
